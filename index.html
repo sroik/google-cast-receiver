@@ -10,17 +10,19 @@
   </head>
 
   <body>
-    <!-- <cast-media-player></cast-media-player>
+    <div>Hello from sroik</div>
+    
+    <cast-media-player></cast-media-player>
 
     <script>
-      cast.framework.CastReceiverContext.getInstance().start();
+      const context = cast.framework.CastReceiverContext.getInstance();
+      const playerManager = context.getPlayerManager();
+      context.start();
     </script>
 
     <footer>
       <script src="js/receiver.js"></script>
-    </footer> -->
+    </footer>
 
-    <div>Hello from sroik</div>
-    
   </body>
 </html>
