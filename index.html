@@ -23,7 +23,7 @@
       width: 50%;
       height: 50%;
       object-fit: contain;
-      background-color: aqua;
+      background-color: yellow;
       z-index: 9999;
     }
   </style>
@@ -34,12 +34,14 @@
     <img id="image" src="res/stream-placeholder.jpg">
   </div>
   
-  <!-- <cast-media-player></cast-media-player> -->
+  <cast-media-player id="cast-player"></cast-media-player>
 
   <script>
     const context = cast.framework.CastReceiverContext.getInstance();
     const playerManager = context.getPlayerManager();
     context.start();
+
+    document.getElementById('cast-player').style.opacity = 0.75;
   </script>
 
   <footer>
